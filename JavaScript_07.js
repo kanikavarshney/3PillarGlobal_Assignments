@@ -1,7 +1,7 @@
 //level-1
 
 //1-
-let age=prompt("Enter your age")
+let age= prompt("Enter the age")
 if(age>=18){
     console.log("You are old enough to drive")
 }
@@ -15,11 +15,11 @@ let myage=21;
 let yourage=prompt("Enter your age")
 if(myage>yourage){
     let lessage=myage-yourage;
-    console.log(`I am ${lessage} older than you`)
+    console.log(`I am ${lessage} year older than you`)
 }
 else if(myage<yourage){
     let greaterage=yourage-myage;
-    console.log(`You are ${greaterage} older than me`)
+    console.log(`You are ${greaterage} year older than me`)
 }
 else{
     console.log("we both are of same age")
@@ -30,10 +30,10 @@ else{
 let aa = 4
 let bb = 3
 if(aa>bb){
-    console.log("aa is greater than b")
+    console.log("aa is greater than bb")
 }
 else{
-    console.log("aa is less than b")
+    console.log("aa is less than bb")
 }
 
 
@@ -53,42 +53,58 @@ else{
 //1-
 
 let score=prompt("Enter your score")
-switch(score){
-    case(score>=80 && score<=100):
-        console.log("You are pass with grade A");
-    break;
-    case(score>=70 && score<=89):
-        console.log("You are pass with B grade");
-    break;
-    case(score>=60 && score<=69):
-        console.log("You are pass with C grade");
-    break;
-    case(score>=50 && score<=59):
-        console.log("You are pass with D grade");
-    break;
-    default:
-        console.log("You are fail");
+   if( score>=80 && score<=100){
+        console.log("You are pass with grade A")
+    }
+    else if(score>=70 && score<=89){
+        console.log("You are pass with B grade")
+    }
+    else if(score>=60 && score<=69){
+        console.log("You are pass with C grade")
+    }
+    else if(score>=50 && score<=59){
+        console.log("You are pass with D grade")
+    }
+    else{
+        console.log("You are fail")
+    }
 
-}
+
 
 //2-
 let season=prompt("Enter the season")
-if(season==September, October, November){
-    console.log("Season is Autumn")
+season=season.toLowerCase()
+
+switch(season){
+  case "september":
+  case"october":
+  case"november":
+        console.log("Season is Autumn");
+        break;
+    case "december":
+    case "january":
+    case "february":
+        console.log(" Season is Winter");
+        break  ;
+  case "march":
+  case "april":
+  case "may":
+    cosole.log("Season is Spring");
+    break;
+  case "june":
+  case "july":
+  case "august":
+    console.log("Season is Summer");
+    break;
+    default:
+    console.log("enter word is not a season")
 }
-else if(season==December, January,February){
-    console.log("Season is winter")
-}
-else if(season ==March, April,May){
-    console.log("Season is Spring")
-}
-else {
-    console.log("Season is summer")
-}
+
+
 
 //3-
 let day=prompt("What is the day today?")
-let days=day.toLowerCase
+day=day.toLowerCase()
 switch (days){
     case ('monday'):
         console.log("Monday is a working day");
