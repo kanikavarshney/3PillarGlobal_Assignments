@@ -135,5 +135,119 @@ switch (days){
 
 //1-
 
+let month = prompt("Enter a month")
+month=month.toLowerCase()
+month=month.toUpperCase() 
+switch(month){
+  case "january":
+  case "JANUARY":
+    console.log("January has 31 days");
+    break;
+  case "february":
+  case "FEBRUARY":
+    console.log("February has 28 days");
+    break;
+  case "march":
+  case "MARCH":
+    console.log("March has 31 days");
+    break;
+  case "april":
+  case "APRIL":
+    console.log("April has 30 days");
+    break;
+  case "may":
+  case "MAY":
+    console.log("May has 31 days");
+    break;
+  case "june":
+  case"JUNE":
+    console.log("June has 30 days");
+    break;
+  case "july":
+  case"JULY":
+    console.log("July has 31 days");
+    break;
+  case "august":
+  case"August":
+    console.log("August has 31 days");
+    break;
+  case "september":
+  case "SEPTEMBER":
+    console.log("September has 30 days");
+    break;
+  case "october":
+  case "OCTOBER":
+    console.log("October has 31 days");
+    break;
+  case "november":
+  case "November":
+    console.log("November has 30 days");
+    break;
+  case"december":
+  case "DECEMBER":
+    console.log("December has 31 days");
+    break;
+  default:
+    console.log("enter word is not a month name")
+}
+
+//2-leap year
+
+let month = prompt("Enter a month")
+month=month.toLowerCase()
+month=month.toUpperCase() 
+switch(month){
+  case "january":
+  case "JANUARY":
+    console.log("January has 31 days");
+    break;
+  case "february":
+  case "FEBRUARY":
+    console.log("February has 29 days");
+    break;
+  case "march":
+  case "MARCH":
+    console.log("March has 31 days");
+    break;
+  case "april":
+  case "APRIL":
+    console.log("April has 30 days");
+    break;
+  case "may":
+  case "MAY":
+    console.log("May has 31 days");
+    break;
+  case "june":
+  case"JUNE":
+    console.log("June has 30 days");
+    break;
+  case "july":
+  case"JULY":
+    console.log("July has 31 days");
+    break;
+  case "august":
+  case"August":
+    console.log("August has 31 days");
+    break;
+  case "september":
+  case "SEPTEMBER":
+    console.log("September has 30 days");
+    break;
+  case "october":
+  case "OCTOBER":
+    console.log("October has 31 days");
+    break;
+  case "november":
+  case "November":
+    console.log("November has 30 days");
+    break;
+  case"december":
+  case "DECEMBER":
+    console.log("December has 31 days");
+    break;
+  default:
+    console.log("enter word is not a month name")
+}
+
 
 
