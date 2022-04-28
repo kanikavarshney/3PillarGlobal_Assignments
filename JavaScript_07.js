@@ -193,10 +193,10 @@ switch(month){
 
 //2-leap year
 
-let month = prompt("Enter a month")
-month=month.toLowerCase()
-month=month.toUpperCase() 
-switch(month){
+let month1 = prompt("Enter a month")
+month1=month1.toLowerCase()
+month1=month1.toUpperCase() 
+switch(month1){
   case "january":
   case "JANUARY":
     console.log("January has 31 days");
