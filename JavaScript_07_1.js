@@ -293,3 +293,63 @@ console.log(sub)
          }
         }
     
+        //level-3
+
+       /*1-(shallow copy)
+       let countries1=countries
+       console.log(countries1)
+        countries.push('India')
+        console.log(countries)
+        console.log(countries1)*/
+
+        //2-(deep copy)
+       let countries2=[...countries]
+       console.log(countries2)
+       countries.push('India')
+       console.log(countries2)
+          let sortedcountries=(countries2.sort())
+          console.log(sortedcountries)
+
+//3-
+console.log(webTechs.sort())
+console.log(MernStack.sort())
+
+//4-
+let landd=[]
+for(var i=0;i<countries.length;i++){
+    if(countries[i].includes('land')){
+        landd.push(countries[i])
+    }
+}
+console.log(landd)
+
+//7-
+let four=[]
+for(var i=0;i<countries.length;i++){
+    if(countries[i].length<=4){
+        four.push(countries[i])
+    }
+}
+console.log(four)
+
+//8-
+let two=[]
+for(var i=0;i<countries.length;i++){
+    if(countries[i].length>=2){
+        two.push(countries[i])
+    }
+}
+console.log(two)
+
+
+//9-
+let stored=[]
+for(var j=0;j<countries.length;j++){
+    stored.push(countries[j].toUpperCase())
+}
+let reverse=[]
+for(var i=stored.length;i>=0;i--){
+    reverse.push(stored[i])
+}
+console.log(reverse)
+ṇ
