@@ -338,5 +338,62 @@ function randomid(){
 }
 console.log(randomid())
 
+//level-3
+
+/*1-
+function useridgenerator(){
+    let letters='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+    let numberofcharacter=prompt('Enter the numbers of characters you want');
+    let numberofids=prompt("Enter no.of ids u want")
+    let id=''
+    for(var i=0;i<numberofcharacter;i++){
+        for(var j=0;j<numberofids;j++){
+      id+=letters.charAt(Math.floor(Math.random()*62))
+    }
+
+}
+    console.log(id)
+  }
+useridgenerator()*/
+
+//2-
+function rgbcolorgenerator(){
+    rgb1=Math.floor(Math.random()*255)+1
+    rgb2=Math.floor(Math.random()*255)+1
+    rgb3=Math.floor(Math.random()*255)+1
+    let rgb=`rgb(${rgb1},${rgb2},${rgb3})`
+    console.log(rgb)
+
+}
+rgbcolorgenerator()
+
+
+//3-
+function getColorArray(num) {
+    var result = [];
+    for (var i = 0; i < num; i += 1) {
+    var letters = '0123456789ABCDEF'.split('');
+    var color = '#';
+    for (var j = 0; j < 6; j += 1) {
+    color += letters[Math.floor(Math.random() * 16)];
+    }
+    result.push(color);
+    }
+    return result;
+    }
+    console.log(getColorArray(5))
+
+
+
+
+
+
+    
+
+
+
+
+  
+
 
 
