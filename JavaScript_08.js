@@ -383,17 +383,222 @@ function getColorArray(num) {
     }
     console.log(getColorArray(5))
 
+//4-
+function rgbarray(num){
+    var parinam=[]
+        let rgb1=Math.floor((Math.round()*255)+1)
+        let rgb2=Math.floor((Math.round()*255)+1)
+        let rgb3=Math.floor((Math.round()*255)+1)
+        let rgbcolors=`rgb(${rgb1},${rgb2},${rgb3})`
+        parinam.push(rgbcolors)
+        return parinam
+    }
+
+console.log(rgbarray(5))
+
+//5-
+const hex = '#00CD23';
+const hexToRGB = hex => {
+   let r = 0, g = 0, b = 0;
+   // handling 3 digit hex
+   if(hex.length == 4){
+       console.log("only 3 digits hexa values are allowed")
+   }else if (hex.length == 7){
+
+      r = "0x" + hex[1] + hex[2];
+      g = "0x" + hex[3] + hex[4];
+      b = "0x" + hex[5] + hex[6];
+   };
+
+   return(`rgb(${+r},${+g},${+b})`)
+}
+console.log(hexToRGB(hex));
+
+//6-
+const rgbcolor={
+    red:0,green:128,blue:92
+}
+function rgbtohex({red:r,green:g,blue:b}){
+    const prefix='#'
+    const hex=prefix+((1<<24)+(r<<16)+(g<<8)+b).toString(16).slice(1);
+    return hex;
+}
+console.log(rgbtohex(rgbcolor))
+
+//8-
+function shufflearray(arrays){
+    let curdId=arrays.length
+    while(0!=curdId){
+        let randomid = Math.floor(Math.random()*curdId)
+        curdId=curdId-1
+        let temp=arrays[curdId]
+        arrays[curdId]=arrays[randomid]
+        arrays[randomid]=temp
+    }
+    return arrays
+}
+let arra=[1,2,3,4,5]
+arra=shufflearray(arra)
+console.log(arra)
 
 
+//9-
+function factorial(num){
+    let fact=1;
+    for(var i=num;i>=1;i--){
+        fact=fact *i;
+    }
+    return fact
+}
+console.log(factorial(4))
 
+//10-
+function isEmpty(a){
+    if(a.isEmpty){
+        console.log("parameter is empty")
+    }
+    else{
+        console.log("Parameter is not Empty")
+    }
+}
+isEmpty(1,2)
 
+//11-
+const sum=(...args)=>{
+    add=0
+    for(const element of args){
+        add=add+element;
+    }
+    return add;
+}
+console.log(sum(1,2,3,4,5))
+
+//12-
+function sumofarrayitems(arra){
+    let sum=0;
+    for(var i=0;i<arra.length;i++){
+        sum=sum+arra[i]
+    }
+    return sum;
+}
+let array=['a','b']
+console.log(sumofarrayitems(array))
+    for(var j=0;j<array.length;j++){
+    if(typeof array[j]=="number"){
+        console.log("sum possible")
+    }
+    else{
+        console.log("Sum not possible")
+    }
+    }
+    
+//13-
+function average(numbers){
+   res=0
+   count=numbers.length;
+   let average=0
+   for(var i=0;i<numbers.length;i++){
+       res=res+numbers[i]
+       average=res/count
+   }
+   return average
+}
+numbers=[4,2,2,4]
+console.log(average(numbers))
+
+//14-
+function modifyarray(array){
+    newarr=[]
+    if(array.length>=5){
+        array[4]=array[4].toUpperCase() 
+        }
+        else {
+            console.log("Item not found")
+        }
+        return array
 
     
+}
+let arr=['kanika','aastha','kinjal','kashish','mitali','kratika']
+console.log(modifyarray(arr))
+
+//15-
+
+function prime(num){
+    if(num===1){
+        return `"Number is not prime"`;
+    }
+    else if (num===2){
+        return `"Number is prime"`;
+    }
+    else{
+      for(var i=2;i<num;i++){
+          if(num%i===0){
+              return `"Number is not prime"`;
+          }
+          return `"Number is prime"`;
+      }
+    }
+}
+console.log(prime(8))
+
+
+//16-
+const myarr=["a","b","a"]
+const countUnique=myarr=>{
+    const counts={}
+    for(var i=0;i<myarr.length;i++){
+            counts[myarr[i]]=1+(counts[myarr[i]] || 0)
+    }
+    return counts;
+}
+console.log(countUnique(myarr));
+
+
+
+//17-
+const arrmy=['1','2','3']
+const countdatatype=arrmy=>{
+    let first=typeof(arrmy[0]);
+    for(var i=1;i<arrmy.length;i++){
+        if((typeof(arr[i]))!=first)
+            return `"Elements are not same"`  
+        return`"Elements are same"`
+    }
+}
+console.log(countdatatype(arrmy))
+//18-
+//19-
+function sevenrandomnumber(){
+    newarrays=[]
+    for(var i=0;i<7;i++){
+        newarrays.push(Math.floor(Math.random()*10)+0)
+
+    }
+    console.log(newarrays)
+}
+sevenrandomnumber()
+
+//20-
+function reversearray(array){
+          let copyarray=array;
+          console.log(`Original array:[${copyarray}]`)
+          reversearrayy=[]
+          for(var i=array.length-1;i>=0;i--){
+              reversearrayy.push(array[i])
+          }
+          return reversearrayy
+}
+array=[1,2,3,4,5,6]
+console.log(reversearray(array))
 
 
 
 
-  
+
+
+
+
 
 
 
