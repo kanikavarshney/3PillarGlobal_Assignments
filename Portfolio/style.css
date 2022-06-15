@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    
+}
+body{
+    /*background-image:url(https://wallpapercave.com/wp/BWj5hjo.png);*/
+   background-image: url(https://cdnb.artstation.com/p/marketplace/presentation_assets/000/106/275/large/file.jpg?1552402354);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.name{
+    font-size: 70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    color: white;
+    box-shadow:inset;
+
+}
+
+#qualities{
+    background: pink;
+    height: 80px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 30px;
+    box-shadow: inset;
+
+}
+
+.scroll {
+    width: 100%;
+    height: 220px;
+    position: relative;
+  }
+  .scroll>.first{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    opacity: 0;
+    height: 0px;
+    }
+    
+.scroll>.first:nth-child(1){
+    animation: animation 9s linear infinite;
+  }
+  .scroll>.first:nth-child(2){
+    animation: animation 9s linear infinite;
+    animation-delay: 3s;
+    }
+  .scroll>.first:nth-child(3){
+    animation: animation 9s linear infinite;
+    animation-delay: 6s;
+    
+  }
+  @keyframes animation {
+      0% {opacity: 0; margin-left: 10px;}
+      16% {opacity: 1; margin-left: 30px;}
+      33% {opacity: 0; height: 0px; margin-left: 50px;}
+      100% {opacity: 0; height: 0px; margin-left: 50px;}
+  }
+.fa-laptop{
+    color: black;
+    
+}
+.fa-book{
+    color:blue;
+}
+.fa-star{
+    color: red;
+}
+.para{
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size:large;
+    color: white;
+    line-height: 20px;
+    font-family:'Times New Roman', Times, serif ;
+}
+
+.flex{
+    display:flex;
+    cursor: pointer;
+    justify-content:space-evenly;
+    animation: text 3s 1;
+}
+.html{
+    border: 2px  solid gray;
+    height: 150px;
+    width: 200px;
+    text-align: center;
+    background-color:gainsboro;
+    font-size:x-large;
+    text-align: center;
+    box-shadow: inset;
+    position: relative;
+    display: inline-block;
+    padding:50px;
+    
+    
+}
+
+.html:hover{
+    background-color:moccasin;
+}
+.ani{
+    display: flex;
+    bottom: 30px;
+    gap: 10px;
+    padding-left: 200px;
+    margin-top: 60px;
+}
+
+p{
+  color: white;
+  padding-top: 18px;
+}
+
+span{
+    font-size: xx-large;
+    line-height: 46px;
+    display: inline-block;
+    display: none;
+    font-weight: bolder;
+}
+.a{
+    color: red;
+}
+.b{
+    color: green;
+}
+.c{
+    color: purple;
+}
+.d{
+    color: chartreuse;
+}
+.e{
+    color: blue;
+}
+
+.text-in{
+    display: block;
+}
