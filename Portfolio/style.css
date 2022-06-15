@@ -23,7 +23,12 @@ body{
     box-shadow:inset;
 
 }
-
+@media screen  and (max-width:800px){
+    .name{
+        font-size: 30px;
+        margin-left: 100px;
+    }
+}
 #qualities{
     background: pink;
     height: 80px;
@@ -35,7 +40,13 @@ body{
     box-shadow: inset;
 
 }
-
+@media screen  and (max-width:800px){
+    #qualities{
+        height: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
 .scroll {
     width: 100%;
     height: 220px;
@@ -49,7 +60,12 @@ body{
     opacity: 0;
     height: 0px;
     }
-    
+    @media screen  and (max-width:800px){
+        .scroll>.first{
+            font-size: 10px;
+            
+        }
+    }
 .scroll>.first:nth-child(1){
     animation: animation 9s linear infinite;
   }
@@ -88,7 +104,14 @@ body{
     line-height: 20px;
     font-family:'Times New Roman', Times, serif ;
 }
+@media screen  and (max-width:800px){
+    .para{
+        margin-left: 100px;
+        margin-right: 100px;
+        font-size: medium;
 
+    }
+}
 .flex{
     display:flex;
     cursor: pointer;
@@ -110,7 +133,14 @@ body{
     
     
 }
-
+@media screen  and (max-width:800px){
+    .html{
+        height: 100px;
+        font-size: medium;
+        padding: auto;
+        
+    }
+}
 .html:hover{
     background-color:moccasin;
 }
@@ -121,12 +151,23 @@ body{
     padding-left: 200px;
     margin-top: 60px;
 }
+@media screen  and (max-width:800px){
+    .ani{
+        padding-left: 100px;
+        flex-direction: column;
 
+    }
+}
 p{
   color: white;
   padding-top: 18px;
 }
+@media screen  and (max-width:800px){
+    .p{
+        padding-top: 10px;
 
+    }
+}
 span{
     font-size: xx-large;
     line-height: 46px;
