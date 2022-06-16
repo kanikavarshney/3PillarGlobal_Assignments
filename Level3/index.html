@@ -10,10 +10,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body onload="setInterval(changeColor,1000)">
     <div class="main">
-        <h1 style="margin-bottom:20px; ">Asabeneh Yetayeh challenges in <span style="font-size:80px ;">2020</span></h1>
+        <h1 style="margin-bottom:20px;">Asabeneh Yetayeh challenges in <span id="change" style="font-size:80px; color: yellow;">2020</span></h1>
         <h3 style="margin-bottom:20px ;text-decoration: underline;">30DaysOfJavascriptChallenge</h3>
+        <div class="clock" id="changebg" style="text-align:center">
+            <p id="date" style="font-size:small;"></p>
+            <p id="clock" style="font-size:small;"></p>
+        </div>
         <div id="python" class="python">
             <p>30 Days Of Python</p>
             <details style="text-align:left;">
