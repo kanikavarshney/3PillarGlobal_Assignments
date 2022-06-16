@@ -5,6 +5,7 @@
 }
 body{
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 summary{
     
@@ -15,10 +16,11 @@ summary{
     justify-content: space-evenly;
     border: 2px solid green;
     background-color: green;
-    height: 30px;
+    height: 50px;
     margin-left: 440px;
     margin-right: 440px;
     margin-bottom: 5px;
+    padding: 8px;
    
 }
 .pythonn{
@@ -39,10 +41,11 @@ summary{
     justify-content: space-evenly;
     border: 2px solid yellow;
     background-color: yellow;
-    height: 30px;
+    height: 50px;
     margin-left: 440px;
     margin-right: 440px;
     margin-bottom: 5px;
+    padding:8px; 
    
 }
 .javascriptt{
@@ -63,10 +66,11 @@ summary{
     justify-content: space-evenly;
     border: 2px solid orangered;
     background-color: orangered;
-    height: 30px;
+    height: 50px;
     margin-left: 440px;
     margin-right: 440px;
     margin-bottom: 5px;
+    padding:8px; 
    
 }
 .htmll{
@@ -87,10 +91,11 @@ summary{
     justify-content: space-evenly;
     border: 2px solid orangered;
     background-color: orangered;
-    height: 30px;
+    height: 50px;
     margin-left: 440px;
     margin-right: 440px;
     margin-bottom: 5px;
+    padding:8px; 
    
 }
 .reactt{
@@ -111,10 +116,11 @@ summary{
     justify-content: space-evenly;
     border: 2px solid orangered;
     background-color: orangered;
-    height: 30px;
+    height: 50px;
     margin-left: 440px;
     margin-right: 440px;
     margin-bottom: 5px;
+    padding:8px; 
    
 }
 .reactnativee{
@@ -135,10 +141,11 @@ summary{
     justify-content: space-evenly;
     border: 2px solid orangered;
     background-color: orangered;
-    height: 30px;
+    height: 50px;
     margin-left: 440px;
     margin-right: 440px;
     margin-bottom: 5px;
+    padding:8px; 
    
 }
 .fullstackk{
@@ -159,10 +166,11 @@ summary{
     justify-content: space-evenly;
     border: 2px solid orangered;
     background-color: orangered;
-    height: 30px;
+    height: 50px;
     margin-left: 440px;
     margin-right: 440px;
     margin-bottom: 5px;
+    padding:8px; 
    
 }
 .dataa{
@@ -183,10 +191,11 @@ summary{
     justify-content: space-evenly;
     border: 2px solid orangered;
     background-color: orangered;
-    height: 30px;
+    height: 50px;
     margin-left: 440px;
     margin-right: 440px;
     margin-bottom: 5px;
+    padding:8px; 
    
 }
 .machinee{
@@ -200,4 +209,41 @@ summary{
     margin-right: 440px;
     padding: 15px; 
     margin-bottom: 10px;
+}
+.flex{
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.first{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 10px;
+    gap: 14px;
+}
+.second{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 10px;
+    gap: 14px;
+}
+.third{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 10px;
+    gap: 14px;
+}
+
+.fourth{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 10px;
+    gap: 14px;
+}
+.fifth{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 10px;
+    gap: 14px;
 }
