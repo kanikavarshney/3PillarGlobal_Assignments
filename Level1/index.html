@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Number Generator</h1>
+    <p>30 Days of JavaScript</p>
+    <p>Author:Kanika Varshney</p>
+    <div></div>
+    <script>
+        let body = document.querySelector("body")
+        let div = document.querySelector("div")
+        var isPrime;
+        for (let i = 0; i <= 101; i++) {
+            isPrime = 1;
+            for (let j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    isPrime = 0;
+                    break;
+                }
+            }
+            if (isPrime == 1 && i != 0 && i != 1) {
+                let box = document.createElement("div")
+                box.textContent = i;
+                box.style.width = "150px";
+                box.style.height = "120px";
+                box.style.backgroundColor = "red"
+                box.style.margin = "5px";
+                box.style.alignContent = "center";
+                box.style.fontSize = "24px";
+                box.style.color = "white";
+                div.appendChild(box)
+            }
+            else if (i % 2 === 0) {
+                let box = document.createElement("div")
+                box.textContent = i;
+                box.style.width = "150px";
+                box.style.height = "120px"
+                box.style.backgroundColor = "green"
+                box.style.margin = "5px";
+                box.style.alignContent = "center";
+                box.style.fontSize = "24px";
+                box.style.color = "white";
+                div.appendChild(box)
+            }
+            else {
+                let box = document.createElement("div")
+                box.textContent = i;
+                box.style.width = "150px";
+                box.style.height = "120px";
+                box.style.backgroundColor = "orange"
+                box.style.margin = "5px";
+                box.style.alignContent = "center";
+                box.style.fontSize = "24px";
+                box.style.color = "white";
+                div.appendChild(box)
+            }
+        }
+    </script>
+</body>
+
+</html>
